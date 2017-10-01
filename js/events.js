@@ -17,10 +17,19 @@ function submitIt () {
   })
 }
 
+function pressIt() {
+  $('input').on('keydown', function(key) {
+    if (key.which === 71) {
+      alert("g was pressed.")
+    }
+  })
+}
+
 $(document).ready(function(){
   getIt()
   frameIt()
   submitIt()
+  pressIt()
 // call functions here
 
 });
